@@ -1,0 +1,3 @@
+SudachiPy>=0.6.8
+sudachidict_core>=20240320
+pytest>=7.0
