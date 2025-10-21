@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mrtranslator"
+version = "0.1.0"
+description = "Utilities for building prompt-driven machine translation workflows"
+authors = [{ name = "MRTranslator" }]
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
