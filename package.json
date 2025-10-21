@@ -1,0 +1,29 @@
+{
+  "name": "mrtranslator",
+  "version": "0.1.0",
+  "description": "MRTranslator desktop app",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "concurrently \"npm:dev\" \"npm:electron\"",
+    "electron": "cross-env NODE_ENV=development wait-on http://localhost:5173 && electron .",
+    "electron:prod": "cross-env NODE_ENV=production electron ."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "concurrently": "^8.2.2",
+    "electron": "^31.0.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0",
+    "wait-on": "^7.2.0",
+    "cross-env": "^7.0.3"
+  }
+}
